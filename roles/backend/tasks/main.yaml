@@ -28,8 +28,8 @@
   tags:
   - deployment
   ansible.builtin.command: npm install
-    args:
-      chdir: /app
+  args:
+    chdir: /app
 
 - name: copy backend service #copy only works for files without variables
   ansible.builtin.template:
